@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif; color: #142a2c; background: #f7f5f0; }
+    html { scroll-behavior: smooth; }
+    a { color: #0f3b3e; text-decoration: none; }
+    a:hover { color: #c56a3a; }
+  </style>
+</helmet>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#0f3b3e"/><text x="50" y="58" font-family="sans-serif" font-size="26" font-weight="700" fill="#e9a882" text-anchor="middle">A2I</text></svg>
+</template>
+
+<div data-screen-label="A2I Health Website">
+
+  <!-- NAV -->
+  <nav style="position: sticky; top: 0; z-index: 50; background: #f7f5f0; border-bottom: 1px solid #e2ddd2; display: flex; align-items: center; justify-content: space-between; padding: 18px 56px;">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: #0f3b3e;">
+      <svg width="40" height="40" viewBox="0 0 120 120" aria-label="A2I Health logo">
+        <rect x="12" y="12" width="96" height="96" rx="26" fill="#0f3b3e"></rect>
+        <line x1="60" y1="26" x2="60" y2="49" stroke="#f7f5f0" stroke-width="5.5" stroke-linecap="round"></line>
+        <line x1="60" y1="71" x2="60" y2="94" stroke="#f7f5f0" stroke-width="5.5" stroke-linecap="round"></line>
+        <polyline points="24,60 40,60 48,44 58,76 66,52 72,60 96,60" fill="none" stroke="#e9a882" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+        <circle cx="60" cy="26" r="6.5" fill="#f7f5f0"></circle>
+        <circle cx="60" cy="94" r="6.5" fill="#f7f5f0"></circle>
+        <circle cx="96" cy="60" r="5.5" fill="#e9a882"></circle>
+      </svg>
+      <span>A2I <span style="color: #c56a3a;">Health</span> Solutions</span>
+    </a>
+    <div style="display: flex; align-items: center; gap: 36px; font-size: 15px; font-weight: 600;">
+      <a href="#suite">HealthOps Suite</a>
+      <a href="#products">Products</a>
+      <a href="#services">Expert Services</a>
+      <a href="#contact" style="background: #0f3b3e; color: #f7f5f0; padding: 12px 24px; border-radius: 100px;" style-hover="background: #c56a3a; color: #ffffff;">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" style="padding: 110px 56px 90px 56px; max-width: 1200px; margin: 0 auto;">
+    <div style="font-size: 15px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c56a3a; margin-bottom: 28px;">From Health Data to Health Intelligence</div>
+    <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 68px; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 28px 0; color: #0f3b3e; max-width: 900px; text-wrap: pretty;">AI-native operations for payers and providers</h1>
+    <p style="font-size: 22px; line-height: 1.6; color: #44554f; max-width: 680px; margin: 0 0 40px 0;">A2I Health Solutions turns interoperability, risk adjustment, and population health into intelligent, automated operations — delivered through the A2I HealthOps suite.</p>
+    <div style="display: flex; gap: 16px;">
+      <a href="#contact" style="background: #0f3b3e; color: #f7f5f0; padding: 16px 34px; border-radius: 100px; font-size: 17px; font-weight: 600;" style-hover="background: #c56a3a; color: #ffffff;">Request a Demo</a>
+      <a href="#suite" style="border: 2px solid #0f3b3e; color: #0f3b3e; padding: 14px 34px; border-radius: 100px; font-size: 17px; font-weight: 600;" style-hover="border-color: #c56a3a; color: #c56a3a;">Explore the Suite</a>
+    </div>
+  </header>
+
+  <!-- STATS STRIP -->
+  <div style="background: #0f3b3e; color: #f7f5f0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 48px 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+      <div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #e9a882;">HL7 · FHIR</div>
+        <div style="font-size: 15px; color: #a8bfb9; margin-top: 6px;">Standards-native from day one</div>
+      </div>
+      <div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #e9a882;">5 platforms</div>
+        <div style="font-size: 15px; color: #a8bfb9; margin-top: 6px;">One AI-native HealthOps suite</div>
+      </div>
+      <div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #e9a882;">Payers + Providers</div>
+        <div style="font-size: 15px; color: #a8bfb9; margin-top: 6px;">Built for both sides of the exchange</div>
+      </div>
+      <div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #e9a882;">Cloud + Edge</div>
+        <div style="font-size: 15px; color: #a8bfb9; margin-top: 6px;">In facility, at home, on devices</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYERED SUITE -->
+  <section id="suite" style="max-width: 1200px; margin: 0 auto; padding: 100px 56px;">
+    <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c56a3a; margin-bottom: 18px;">The A2I HealthOps Suite</div>
+    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 18px 0; color: #0f3b3e; max-width: 760px;">One suite. Layered like an operating system.</h2>
+    <p style="font-size: 19px; line-height: 1.6; color: #44554f; max-width: 720px; margin: 0 0 56px 0;">Data is acquired once at the interoperability foundation and reused by every operations and intelligence layer above it — so each workflow builds on a record you can trust.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="border: 1px solid #d9d2c3; border-radius: 14px; background: #ffffff; padding: 28px 36px; display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #c56a3a;">Use Intelligence</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #0f3b3e; margin-top: 6px;">Predict &amp; monitor</div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="#p-360" style="background: #f2ece0; border-radius: 100px; padding: 10px 20px; font-size: 15px; font-weight: 600; color: #0f3b3e;" style-hover="background: #0f3b3e; color: #f7f5f0;">Health360OpsOS</a>
+          <a href="#p-rpm" style="background: #f2ece0; border-radius: 100px; padding: 10px 20px; font-size: 15px; font-weight: 600; color: #0f3b3e;" style-hover="background: #0f3b3e; color: #f7f5f0;">HealthRPMOps</a>
+        </div>
+      </div>
+      <div style="border: 1px solid #d9d2c3; border-radius: 14px; background: #ffffff; padding: 28px 36px; display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #c56a3a;">Run Operations</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #0f3b3e; margin-top: 6px;">Automate the workflows</div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="#p-aiops" style="background: #f2ece0; border-radius: 100px; padding: 10px 20px; font-size: 15px; font-weight: 600; color: #0f3b3e;" style-hover="background: #0f3b3e; color: #f7f5f0;">HealthAIOpsOS</a>
+          <a href="#p-risk" style="background: #f2ece0; border-radius: 100px; padding: 10px 20px; font-size: 15px; font-weight: 600; color: #0f3b3e;" style-hover="background: #0f3b3e; color: #f7f5f0;">HealthRiskAdjustmentOpsOS</a>
+        </div>
+      </div>
+      <div style="border: 1px solid #0f3b3e; border-radius: 14px; background: #0f3b3e; padding: 28px 36px; display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #e9a882;">Get Data</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #f7f5f0; margin-top: 6px;">Acquire once, use everywhere</div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+          <a href="#p-interops" style="background: #1c5257; border-radius: 100px; padding: 10px 20px; font-size: 15px; font-weight: 600; color: #f7f5f0;" style-hover="background: #c56a3a; color: #ffffff;">HealthInterOpsOS</a>
+          <span style="font-size: 14px; color: #a8bfb9;">HL7 · FHIR · Claims · Clinical · EHR · SDOH</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" style="background: #efe9dc; border-top: 1px solid #e2ddd2; border-bottom: 1px solid #e2ddd2;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 100px 56px;">
+      <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c56a3a; margin-bottom: 18px;">Products</div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 56px 0; color: #0f3b3e;">Five AI-native platforms</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div id="p-interops" style="background: #ffffff; border: 1px solid #d9d2c3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 14px; grid-column: 1 / -1;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #c56a3a;"></div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; margin: 0; color: #0f3b3e;">HealthInterOpsOS</h3>
+            <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #7a8a80; margin-left: auto;">Foundation</span>
+          </div>
+          <p style="font-size: 17px; line-height: 1.6; color: #44554f; margin: 0; max-width: 860px;">AI-native HL7 and FHIR services for payers and providers. The interoperability foundation of the suite — acquiring, normalizing, and exchanging clinical and administrative data across every channel.</p>
+        </div>
+
+        <div id="p-aiops" style="background: #ffffff; border: 1px solid #d9d2c3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #0f3b3e;"></div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; margin: 0; color: #0f3b3e;">HealthAIOpsOS</h3>
+          </div>
+          <p style="font-size: 16.5px; line-height: 1.6; color: #44554f; margin: 0;">AI-native prior authorization, denials, appeals, and recon submissions — over portal, EDI, B2B, and interoperability channels.</p>
+        </div>
+
+        <div id="p-risk" style="background: #ffffff; border: 1px solid #d9d2c3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #0f3b3e;"></div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; margin: 0; color: #0f3b3e;">HealthRiskAdjustmentOpsOS</h3>
+          </div>
+          <p style="font-size: 16.5px; line-height: 1.6; color: #44554f; margin: 0;">AI-native risk adjustment reconciliation — AI-driven suspect conditions, coding gaps, and Patient 360 member data review.</p>
+        </div>
+
+        <div id="p-360" style="background: #ffffff; border: 1px solid #d9d2c3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #0f3b3e;"></div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; margin: 0; color: #0f3b3e;">Health360OpsOS</h3>
+          </div>
+          <p style="font-size: 16.5px; line-height: 1.6; color: #44554f; margin: 0;">Population health management leveraging LLMs and machine-learning models to predict and prevent high-cost, high-risk events — powered by SDOH and clinical data.</p>
+        </div>
+
+        <div id="p-rpm" style="background: #ffffff; border: 1px solid #d9d2c3; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 12px; height: 12px; border-radius: 50%; background: #0f3b3e;"></div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700; margin: 0; color: #0f3b3e;">HealthRPMOps</h3>
+          </div>
+          <p style="font-size: 16.5px; line-height: 1.6; color: #44554f; margin: 0;">Patient remote monitoring leveraging cloud and edge computing — in facility, at home, and across connected devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERT SERVICES -->
+  <section id="services" style="max-width: 1200px; margin: 0 auto; padding: 100px 56px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+      <div>
+        <div style="font-size: 14px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c56a3a; margin-bottom: 18px;">A2I Expert Services</div>
+        <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 20px 0; color: #0f3b3e;">From strategy to support. Delivered end-to-end.</h2>
+        <p style="font-size: 18px; line-height: 1.65; color: #44554f; margin: 0;">Every deployment is backed by specialists in HL7/FHIR interoperability, risk adjustment, and payer operations — who consult, design, implement, test, and support alongside your team.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 18px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 100px; padding: 16px 28px;"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #c56a3a;">01</span><span style="font-size: 17px; font-weight: 600; color: #0f3b3e;">Consult</span></div>
+        <div style="display: flex; align-items: center; gap: 18px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 100px; padding: 16px 28px; margin-left: 28px;"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #c56a3a;">02</span><span style="font-size: 17px; font-weight: 600; color: #0f3b3e;">Design</span></div>
+        <div style="display: flex; align-items: center; gap: 18px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 100px; padding: 16px 28px; margin-left: 56px;"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #c56a3a;">03</span><span style="font-size: 17px; font-weight: 600; color: #0f3b3e;">Implement</span></div>
+        <div style="display: flex; align-items: center; gap: 18px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 100px; padding: 16px 28px; margin-left: 84px;"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #c56a3a;">04</span><span style="font-size: 17px; font-weight: 600; color: #0f3b3e;">Test</span></div>
+        <div style="display: flex; align-items: center; gap: 18px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 100px; padding: 16px 28px; margin-left: 112px;"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #c56a3a;">05</span><span style="font-size: 17px; font-weight: 600; color: #0f3b3e;">Support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + CONTACT -->
+  <section id="contact" style="background: #0f3b3e; color: #f7f5f0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 100px 56px;">
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 20px 0; max-width: 760px;">Ready to make your health data operational?</h2>
+      <p style="font-size: 19px; line-height: 1.6; color: #a8bfb9; max-width: 640px; margin: 0 0 44px 0;">Let's talk about where your organization is headed — and how AI-native operations can get you there.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; border-top: 1px solid #1c5257; padding-top: 44px;">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #e9a882; margin-bottom: 12px;">Visit</div>
+          <div style="font-size: 17px; line-height: 1.6;">A2I Health Solutions<br>4705 Tribeca Lane<br>Plano, Texas 75024</div>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #e9a882; margin-bottom: 12px;">Call</div>
+          <a href="tel:14696784070" style="font-size: 17px; color: #f7f5f0;" style-hover="color: #e9a882;">+1 469 678 4070</a>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #e9a882; margin-bottom: 12px;">Email</div>
+          <a href="/cdn-cgi/l/email-protection#5f3d373e2c343e2d1f3e6d36373a3e332b37713c3032" style="font-size: 17px; color: #f7f5f0;" style-hover="color: #e9a882;"><span class="__cf_email__" data-cfemail="a8cac0c9dbc3c9dae8c99ac1c0cdc9c4dcc086cbc7c5">[email&#160;protected]</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT WIDGET -->
+  <div style="position: fixed; bottom: 28px; right: 28px; z-index: 100; display: flex; flex-direction: column; align-items: flex-end; gap: 14px;">
+    <sc-if value="{{ chatOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="width: 380px; height: 520px; background: #ffffff; border: 1px solid #d9d2c3; border-radius: 18px; box-shadow: 0 18px 50px rgba(15,59,62,0.25); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: #0f3b3e; color: #f7f5f0; padding: 16px 20px; display: flex; align-items: center; gap: 12px;">
+          <svg width="26" height="26" viewBox="0 0 120 120">
+            <rect x="12" y="12" width="96" height="96" rx="26" fill="#f7f5f0"></rect>
+            <polyline points="24,60 40,60 48,44 58,76 66,52 72,60 96,60" fill="none" stroke="#c56a3a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+          <div style="flex: 1;">
+            <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px;">A2I Health Assistant</div>
+            <div style="font-size: 12px; color: #a8bfb9;">{{ chatStatusLabel }}</div>
+          </div>
+          <button onClick="{{ toggleChat }}" style="background: none; border: none; color: #a8bfb9; font-size: 20px; cursor: pointer; padding: 4px;" style-hover="color: #ffffff;">×</button>
+        </div>
+        <div ref="{{ chatScrollRef }}" style="flex: 1; overflow-y: auto; padding: 18px; display: flex; flex-direction: column; gap: 12px; background: #f7f5f0;">
+          <sc-for list="{{ chatMessages }}" as="msg" hint-placeholder-count="1">
+            <div style="max-width: 82%; padding: 10px 14px; border-radius: 14px; font-size: 14.5px; line-height: 1.5; white-space: pre-wrap; align-self: {{ msg.align }}; background: {{ msg.bg }}; color: {{ msg.fg }};">{{ msg.text }}</div>
+          </sc-for>
+          <sc-if value="{{ chatBusy }}" hint-placeholder-val="{{ false }}">
+            <div style="align-self: flex-start; padding: 10px 14px; border-radius: 14px; background: #ffffff; border: 1px solid #e2ddd2; color: #7a8a80; font-size: 14px;">Thinking…</div>
+          </sc-if>
+        </div>
+        <div style="border-top: 1px solid #e2ddd2; padding: 12px; display: flex; gap: 8px; background: #ffffff;">
+          <input value="{{ chatInput }}" onChange="{{ onChatInput }}" onKeyDown="{{ onChatKey }}" placeholder="Ask about our products…" style="flex: 1; border: 1px solid #d9d2c3; border-radius: 100px; padding: 11px 16px; font-size: 14.5px; font-family: 'Public Sans', sans-serif; outline: none; color: #142a2c;">
+          <button onClick="{{ sendChat }}" style="background: #0f3b3e; color: #f7f5f0; border: none; border-radius: 100px; padding: 0 20px; font-size: 14.5px; font-weight: 600; cursor: pointer; font-family: 'Public Sans', sans-serif;" style-hover="background: #c56a3a;">Send</button>
+        </div>
+      </div>
+    </sc-if>
+    <button onClick="{{ toggleChat }}" aria-label="Chat with us" style="width: 60px; height: 60px; border-radius: 50%; background: #0f3b3e; border: none; cursor: pointer; box-shadow: 0 10px 26px rgba(15,59,62,0.35); display: flex; align-items: center; justify-content: center;" style-hover="background: #c56a3a;">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f7f5f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background: #0a2b2e; color: #7a9a93;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 32px 56px; display: flex; justify-content: space-between; align-items: center; font-size: 14px;">
+      <span style="display: flex; align-items: center; gap: 10px;">
+        <svg width="24" height="24" viewBox="0 0 120 120">
+          <rect x="12" y="12" width="96" height="96" rx="26" fill="#f7f5f0"></rect>
+          <line x1="60" y1="26" x2="60" y2="49" stroke="#0f3b3e" stroke-width="5.5" stroke-linecap="round"></line>
+          <line x1="60" y1="71" x2="60" y2="94" stroke="#0f3b3e" stroke-width="5.5" stroke-linecap="round"></line>
+          <polyline points="24,60 40,60 48,44 58,76 66,52 72,60 96,60" fill="none" stroke="#c56a3a" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          <circle cx="60" cy="26" r="6.5" fill="#0f3b3e"></circle>
+          <circle cx="60" cy="94" r="6.5" fill="#0f3b3e"></circle>
+          <circle cx="96" cy="60" r="5.5" fill="#c56a3a"></circle>
+        </svg>
+        <span>Copyright © 2026 A2I Health Solutions — All Rights Reserved.</span>
+      </span>
+      <span>FHIR® is the registered trademark of HL7 and is used with permission.</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/x-dc" data-dc-script data-props="{
+  &quot;llmEndpoint&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Chat assistant&quot; },
+  &quot;llmModel&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;llama3.1:8b&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Chat assistant&quot; }
+}">
+class Component extends DCLogic {
+  state = { chatOpen: false, chatInput: '', chatBusy: false, chatMessages: [
+    { role: 'assistant', text: 'Hi! I\u2019m the A2I Health assistant. Ask me anything about our AI-native platforms \u2014 interoperability, prior auth, risk adjustment, population health, or remote monitoring.' }
+  ] };
+
+  systemPrompt() {
+    return 'You are the helpful assistant on the A2I Health Solutions website (Plano, TX; contact bhaskar@a2ihealth.com, +1 469 678 4070). A2I builds AI-native healthcare operations software for payers and providers. Products: HealthInterOpsOS (AI-native HL7 & FHIR interoperability services), HealthAIOpsOS (AI-native prior authorization, denials, appeals, recon submissions over portal/EDI/B2B/interop channels), HealthRiskAdjustmentOpsOS (risk adjustment reconciliation: suspect conditions, coding gaps, Patient 360 member review), Health360OpsOS (population health management using LLMs/ML to predict and prevent high-cost, high-risk events from SDOH and clinical data), HealthRPMOps (remote patient monitoring via cloud and edge, in facility / at home / on devices). Answer questions concisely and helpfully; for pricing or demos, direct visitors to the contact section. Never give medical advice. Respond in PLAIN TEXT only: no markdown, no asterisks, no headings, no bullet symbols \u2014 use short sentences and line breaks instead.';
+  }
+
+  async callLLM(history) {
+    const endpoint = (this.props.llmEndpoint ?? '').trim();
+    const model = (this.props.llmModel ?? 'llama3.1:8b').trim();
+    const msgs = history.map(m => ({ role: m.role, content: m.text }));
+    if (endpoint) {
+      // OpenAI-compatible API (Ollama, vLLM, LM Studio, Together, etc.)
+      const res = await fetch(endpoint.replace(/\/$/, '') + '/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model, messages: [{ role: 'system', content: this.systemPrompt() }, ...msgs] })
+      });
+      if (!res.ok) throw new Error('LLM endpoint error ' + res.status);
+      const data = await res.json();
+      return data.choices[0].message.content;
+    }
+    if (window.claude && window.claude.complete) {
+      return await window.claude.complete({ system: this.systemPrompt(), messages: msgs });
+    }
+    throw new Error('No LLM configured');
+  }
+
+  async send() {
+    const text = this.state.chatInput.trim();
+    if (!text || this.state.chatBusy) return;
+    const history = [...this.state.chatMessages, { role: 'user', text }];
+    this.setState({ chatMessages: history, chatInput: '', chatBusy: true }, () => this.scrollChat());
+    try {
+      let reply = await this.callLLM(history);
+      reply = reply.replace(/\*\*(.+?)\*\*/g, '$1').replace(/^#+\s*/gm, '').replace(/^\s*[-*]\s+/gm, '\u2022 ');
+      this.setState({ chatMessages: [...history, { role: 'assistant', text: reply }], chatBusy: false }, () => this.scrollChat());
+    } catch (e) {
+      this.setState({ chatMessages: [...history, { role: 'assistant', text: 'Sorry \u2014 I couldn\u2019t reach the language model (' + e.message + '). Please configure the LLM endpoint or try again, or email bhaskar@a2ihealth.com.' }], chatBusy: false }, () => this.scrollChat());
+    }
+  }
+
+  scrollChat() {
+    const el = this._chatScroll;
+    if (el) el.scrollTop = el.scrollHeight;
+  }
+
+  renderVals() {
+    const endpoint = (this.props.llmEndpoint ?? '').trim();
+    return {
+      chatOpen: this.state.chatOpen,
+      chatBusy: this.state.chatBusy,
+      chatInput: this.state.chatInput,
+      chatStatusLabel: endpoint ? 'Open-source LLM · ' + (this.props.llmModel ?? '') : 'AI assistant · online',
+      chatMessages: this.state.chatMessages.map(m => ({
+        ...m,
+        align: m.role === 'user' ? 'flex-end' : 'flex-start',
+        bg: m.role === 'user' ? '#0f3b3e' : '#ffffff',
+        fg: m.role === 'user' ? '#f7f5f0' : '#142a2c'
+      })),
+      chatScrollRef: (el) => { this._chatScroll = el; },
+      toggleChat: () => this.setState(s => ({ chatOpen: !s.chatOpen })),
+      onChatInput: (e) => this.setState({ chatInput: e.target.value }),
+      onChatKey: (e) => { if (e.key === 'Enter') this.send(); },
+      sendChat: () => this.send()
+    };
+  }
+}
+</script>
+</body>
+</html>
